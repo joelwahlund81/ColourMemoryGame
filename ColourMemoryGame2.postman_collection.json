@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "65f6d744-885f-4e38-82a7-d69ea54e655f",
+		"name": "ColourMemoryGame2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13941021"
+	},
+	"item": [
+		{
+			"name": "Get a game",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7146/game?gameId={{gameId}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7146",
+					"path": [
+						"game"
+					],
+					"query": [
+						{
+							"key": "gameId",
+							"value": "{{gameId}}",
+							"description": "e099262a-0bd7-46af-aa2f-75a1bfc27ab9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new game",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7146/game",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7146",
+					"path": [
+						"game"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get grid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7146/game/grid?gameId={{gameId}}&gridId={{grid1}}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7146",
+					"path": [
+						"game",
+						"grid"
+					],
+					"query": [
+						{
+							"key": "gameId",
+							"value": "{{gameId}}"
+						},
+						{
+							"key": "gridId",
+							"value": "{{grid1}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check between two cards",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"gameId\": \"23b3535c-ee9e-4a03-8c66-e90f88fbd36a\",\r\n    \"grid1\": 10,\r\n    \"grid2\": 85\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7146/game",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7146",
+					"path": [
+						"game"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "gameId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "gridId1",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "gridId2",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
