@@ -84,6 +84,6 @@ V5
 - Highscore 
 
 ## Own verdict
-Rating: 6/10
-Satisfaction: Moderate
+Rating: 6/10<br />
+Satisfaction: Moderate<br />
 Mood: Stressed and joyful
